@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23507D5C248AA6E400EF9DD3 /* settlement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23507D5B248AA6E400EF9DD3 /* settlement.swift */; };
+		23507D5E248AA7C900EF9DD3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23507D5D248AA7C800EF9DD3 /* MainViewController.swift */; };
+		23507D60248ADE2500EF9DD3 /* startArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23507D5F248ADE2500EF9DD3 /* startArray.swift */; };
+		23507D62248AE90E00EF9DD3 /* changeColorArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23507D61248AE90E00EF9DD3 /* changeColorArray.swift */; };
 		235F587C24899E8500200A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F587B24899E8500200A5F /* AppDelegate.swift */; };
 		235F587E24899E8500200A5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F587D24899E8500200A5F /* SceneDelegate.swift */; };
 		235F588024899E8500200A5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235F587F24899E8500200A5F /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23507D5B248AA6E400EF9DD3 /* settlement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settlement.swift; sourceTree = "<group>"; };
+		23507D5D248AA7C800EF9DD3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		23507D5F248ADE2500EF9DD3 /* startArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startArray.swift; sourceTree = "<group>"; };
+		23507D61248AE90E00EF9DD3 /* changeColorArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changeColorArray.swift; sourceTree = "<group>"; };
 		235F587824899E8500200A5F /* color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = color.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235F587B24899E8500200A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		235F587D24899E8500200A5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +51,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23507D57248AA5D100EF9DD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				235F587F24899E8500200A5F /* ViewController.swift */,
+				23507D5D248AA7C800EF9DD3 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23507D58248AA5F100EF9DD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				235F58932489A51600200A5F /* variables.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23507D59248AA5FA00EF9DD3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				235F589124899F6900200A5F /* colorCell.swift */,
+				235F588F24899F4000200A5F /* GameViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23507D5A248AA62C00EF9DD3 /* func */ = {
+			isa = PBXGroup;
+			children = (
+				23507D5B248AA6E400EF9DD3 /* settlement.swift */,
+				23507D5F248ADE2500EF9DD3 /* startArray.swift */,
+				23507D61248AE90E00EF9DD3 /* changeColorArray.swift */,
+			);
+			path = func;
+			sourceTree = "<group>";
+		};
 		235F586F24899E8500200A5F = {
 			isa = PBXGroup;
 			children = (
@@ -64,11 +108,11 @@
 			children = (
 				235F587B24899E8500200A5F /* AppDelegate.swift */,
 				235F587D24899E8500200A5F /* SceneDelegate.swift */,
-				235F58932489A51600200A5F /* variables.swift */,
-				235F589124899F6900200A5F /* colorCell.swift */,
-				235F587F24899E8500200A5F /* ViewController.swift */,
-				235F588F24899F4000200A5F /* GameViewCell.swift */,
 				235F588124899E8500200A5F /* Main.storyboard */,
+				23507D5A248AA62C00EF9DD3 /* func */,
+				23507D59248AA5FA00EF9DD3 /* Cell */,
+				23507D58248AA5F100EF9DD3 /* Model */,
+				23507D57248AA5D100EF9DD3 /* Controller */,
 				235F588424899E8800200A5F /* Assets.xcassets */,
 				235F588624899E8800200A5F /* LaunchScreen.storyboard */,
 				235F588924899E8800200A5F /* Info.plist */,
@@ -147,12 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23507D5C248AA6E400EF9DD3 /* settlement.swift in Sources */,
 				235F588024899E8500200A5F /* ViewController.swift in Sources */,
 				235F58942489A51600200A5F /* variables.swift in Sources */,
 				235F589224899F6900200A5F /* colorCell.swift in Sources */,
 				235F587C24899E8500200A5F /* AppDelegate.swift in Sources */,
+				23507D62248AE90E00EF9DD3 /* changeColorArray.swift in Sources */,
 				235F589024899F4000200A5F /* GameViewCell.swift in Sources */,
+				23507D60248ADE2500EF9DD3 /* startArray.swift in Sources */,
 				235F587E24899E8500200A5F /* SceneDelegate.swift in Sources */,
+				23507D5E248AA7C900EF9DD3 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MVZ2D7626T;
 				INFOPLIST_FILE = color/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +366,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MVZ2D7626T;
 				INFOPLIST_FILE = color/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
